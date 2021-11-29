@@ -114,7 +114,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
 static const uint8_t row_pin_array[MATRIX_ROWS] = { 29, 30, 31, 27, 11 };
-static const uint8_t column_pin_array[MATRIX_COLS] = { 24, 23, 22, 25, 26, 28, 03, 04, 05, 06, 07, 08, 09, 10 };
+static const uint8_t column_pin_array[MATRIX_COLS] = { 24, 23, 22, 25, 26, 28, 3, 4, 5, 6, 7, 8, 9, 10 };
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 /* define if matrix has ghost */
