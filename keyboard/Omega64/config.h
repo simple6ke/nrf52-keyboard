@@ -89,7 +89,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 // 独立硬件按钮
-#define POWER_BUTTON 3
+//#define POWER_BUTTON 3
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
