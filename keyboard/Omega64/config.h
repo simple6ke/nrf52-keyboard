@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CONF_PRODUCT_ID 0x0317 /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
 #define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "LK64" /* 硬件名词，用于蓝牙显示 */
+#define PRODUCT "liuke" /* 硬件名词，用于蓝牙显示 */
 #define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
@@ -75,7 +75,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN 12
 #define RGBLED_NUM 64
 #define RGBLIGHT_ANIMATIONS
-#define RGB_PWR_PIN 11 // P-mos
+//#define RGB_PWR_PIN 11 // P-mos
 //#define RGB_PWR_PIN_REVERSE 20 // N-mos
 /*
 // 3灯指示配置引脚
@@ -93,8 +93,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
-#define UART_RXD 8 // UART_RX口IO 17
-#define UART_TXD 9 // UART_TX口IO 18
+#define UART_RXD 17 // UART_RX口IO 17
+#define UART_TXD 18 // UART_TX口IO 18
 //#define UART_DET 19 // UART 检测引脚，若此脚被拉低，则说明USB正在工作。若不配置则使用RX口作为检测引脚
 #define UART_BAUDRATE NRF_UART_BAUDRATE_115200 // 通信波特率，请不要修改
 
