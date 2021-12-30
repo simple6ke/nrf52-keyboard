@@ -55,7 +55,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define HIGH_TX_POWER /* 更改发射功率到+4dBm */
 #define MULTI_DEVICE_SWITCH  /*启用多设备切换 */
 #define KEYMAP_STORAGE /* 启用keymap存储 */
-// #define MACRO_BLOCKING_MODE /* 在宏播放时禁用其他按键输入 */
+ #define MACRO_BLOCKING_MODE /* 在宏播放时禁用其他按键输入 */
 #define MACRO_STORAGE /* 启用宏存储功能 */
 #define CONFIG_STORAGE /* 启用配置存储功能 */
 #define BUTTONLESS_DFU /* 启用免按钮DFU */
@@ -79,24 +79,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
-/*// LED 配置
+// LED 配置
 #define LED_NUM 22
 #define LED_CAPS 21
 #define LED_SCLK 23
 #define LED_POSITIVE // LED上拉驱动
 // #define LED_NO_DEINIT // 不要deinit端口，可以避免部分IO灯光无法关闭的问题
-*/
+
 // ws2812 RGB 配置
 #define RGB_DI_PIN 12
 #define RGBLED_NUM 64
 #define RGBLIGHT_ANIMATIONS
 
-/*/ Bootloader 指示灯
+// Bootloader 指示灯
 #define LED_DFU_INIT 22
 #define LED_DFU_START 23
 #define LED_DFU_FINISH 24
 #define LED_DFU_POSITIVE // LED上拉驱动
-*/
+
 // 多用途 Bootloader 按钮
 #define NRF_BL_DFU_MULTI_ROLE_BTN 21 
 
@@ -127,11 +127,11 @@ static const uint8_t column_pin_array[MATRIX_COLS] = { 24, 23, 22, 25, 26, 28, 3
 #define DEBOUNCE 5 /* 硬件消抖次数，设置为0则不消抖 */
 #define MATRIX_SCAN_DELAY_CYCLE 48 /* 按键扫描等待IO稳定的延时时长 */
 
-/*// 板载调试器设置
+// 板载调试器设置
 #define SWD_CLK_IO T2EX
 #define SWD_CLK_MASK bT2EX
 #define SWD_CLK_PORT P1
 #define SWD_DAT_IO T2
 #define SWD_DAT_MASK bT2
 #define SWD_DAT_PORT P1
-*/
+
