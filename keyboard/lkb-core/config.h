@@ -33,8 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NKRO_EPSIZE 28 /* 键盘NKRO端点大小，请不要修改 */
 
 /* key matrix size */
-#define MATRIX_ROWS 6 /* 硬件阵列行数 */
-#define MATRIX_COLS 16 /* 硬件阵列列数 */
+#define MATRIX_ROWS 5/* 硬件阵列行数 */
+#define MATRIX_COLS 14 /* 硬件阵列列数 */
 
 /* define if matrix has ghost */
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
@@ -89,16 +89,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
 
-// LED 配置
-#define LED_NUM 22
-#define LED_CAPS 23
-// #define LED_SCLK 23
-#define LED_POSITIVE // LED上拉驱动
+// ws2812 RGB 配置
+#define RGB_DI_PIN 12
+#define RGBLED_NUM 64
+#define RGBLIGHT_ANIMATIONS
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
-#define UART_RXD 27 // UART_RX口IO
-#define UART_TXD 26 // UART_TX口IO
+#define UART_RXD 17 // UART_RX口IO
+#define UART_TXD 18 // UART_TX口IO
 // #define UART_DET 19 // UART 检测引脚，若此脚被拉低，则说明USB正在工作。若不配置则使用RX口作为检测引脚
 #define UART_BAUDRATE NRF_UART_BAUDRATE_115200 // 通信波特率，请不要修改
 
@@ -110,7 +109,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PIN_STANDBY !UCC2 // CH554的充电检测。当UCC2拉低时表示充电完成。若不配置则只使用PIN_CHARGING作为是否充电的检测标志
 
 // 按键阵列配置
-static const uint8_t row_pin_array[MATRIX_ROWS] = { 9, 8, 7, 6, 5, 4 };
-static const uint8_t column_pin_array[MATRIX_COLS] = { 3, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30, 29, 28, 25, 24 };
-
+static const uint8_t row_pin_array[MATRIX_ROWS] = { 29, 30, 31, 27, 11 };
+static const uint8_t column_pin_array[MATRIX_COLS] = { 24, 23, 22, 25, 26, 28, 3, 4, 5, 6, 7, 8, 9, 10 };
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
