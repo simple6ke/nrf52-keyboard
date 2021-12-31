@@ -30,15 +30,17 @@ extern const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
 extern const action_t fn_actions[];
 
 #define KEYMAP( \
-        K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, K0B, K0C, K0D, \
-	K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, K1B, K1C, K1D, \
-	K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A, K2B, K2C,      \
-	K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K3A, K3B, K3C, K3D, \
-	K40, K41, K42, K43,           K46, K47, K48, K49, K4A  \
+	K000, K001, K002, K003, K004, K005, K006, K007, K008, K009, K00A, K00B, K00C, K00D, K00E, K00F, \
+	K200, K201, K202, K203, K204, K205, K206, K207, K208, K209, K20A, K20B, K20C, K20D, K20E, K20F, \
+	K300, K301, K302, K303, K304, K305, K306, K307, K308, K309, K30A, K30B, K30C, K30D, K30E, K30F, \
+	K400, K401, K402, K403, K404, K405, K406, K407, K408, K409, K40A, K40B, K40C,       K40E, K40F, \
+	K500, K501, K502, K503, K504, K505, K506, K507, K508, K509, K50A,       K50C,       K50E,       \
+	K600, K601, K602,             K605,                   K609, K60A, K60B, K60C, K60D, K60E, K60F  \
 ) { \
-	{ K00,    K01,    K02,    K03,    K04,    K05,    K06,    K07,    K08,    K09,    K0A,    K0B,    K0C,    K0D }, \
-	{ K10,    K11,    K12,    K13,    K14,    K15,    K16,    K17,    K18,    K19,    K1A,    K1B,    K1C,    K1D }, \
-	{ K20,    K21,    K22,    K23,    K24,    K25,    K26,    K27,    K28,    K29,    K2A,    K2B,    K2C,    KC_NO }, \
-	{ K30,    K31,    K32,    K33,    K34,    K35,    K36,    K37,    K38,    K39,    K3A,    K3B,    K3C,    K3D }, \
-	{ K40,    K41,    K42,    K43,    KC_NO,  KC_NO,  K46,    K47,    K48,    K49,    K4A,    KC_NO,  KC_NO,  KC_NO }  \
+	{ K000,   K001,   K002,   K003,   K004,   K005,   K006,   K007,   K008,   K009,   K00A,   K00B,   K00C,   K00D,   K00E,   K00F }, \
+	{ K200,   K201,   K202,   K203,   K204,   K205,   K206,   K207,   K208,   K209,   K20A,   K20B,   K20C,   K20D,   K20E,   K20F }, \
+	{ K300,   K301,   K302,   K303,   K304,   K305,   K306,   K307,   K308,   K309,   K30A,   K30B,   K30C,   K30D,   K30E,   K30F }, \
+	{ K400,   K401,   K402,   K403,   K404,   K405,   K406,   K407,   K408,   K409,   K40A,   K40B,   K40C,   KC_NO,  K40E,   K40F }, \
+	{ K500,   K501,   K502,   K503,   K504,   K505,   K506,   K507,   K508,   K509,   K50A,   KC_NO,  K50C,   KC_NO,  K50E,   KC_NO }, \
+	{ K600,   K601,   K602,   KC_NO,  KC_NO,  K605,   KC_NO,  KC_NO,  KC_NO,  K609,   K60A,   K60B,   K60C,   K60D,   K60E,   K60F }  \
 }
