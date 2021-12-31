@@ -1,5 +1,5 @@
 OUTPUT_DIR = _build
-SUBDIRS=$(filter-out $(OUTPUT_DIR),$(shell ls -l | grep ^d | grep -v 'ergoconn\|g84-4100\|Omega45\|Omega50\|Omega84\|farad69\|gt-ble60\|gt-pad\|newhope64\|gt-planck\|template\|lot60-ble\|Omega64\|test' | awk '{print $$9}'))
+SUBDIRS=$(filter-out $(OUTPUT_DIR),$(shell ls -l | grep ^d | grep -v 'ergoconn\|g84-4100\|Omega45\|Omega50\|Omega84\|farad69\|gt-ble60\|gt-pad\|newhope64\|gt-planck\|template\|lot60-ble\|lkb-core\|test' | awk '{print $$9}'))
 export VERSION=af$(shell git log --abbrev-commit --pretty=oneline -1 | cut -c 1-6 || echo 'unknown')
 export BUILDTIME=$(shell date +"%Y%m%d")
 export FILE_VERSION = $(BUILDTIME)-$(VERSION)
